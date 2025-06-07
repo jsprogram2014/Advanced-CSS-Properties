@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox align-self demo (inline CSS)</title>
+</head>
+<body>
+
+  <h1 style="text-align:center;">align-self playground (Flexbox)</h1>
+
+  <!-- flex container -->
+  <div style="display:flex; height:60vh; gap:1rem; background:#f3f4f6; padding:1rem;">
+
+    <!-- flex item 1 -->
+    <section style="align-self:flex-start;  background:#fff; border:2px solid #0ea5e9; font-family:system-ui,sans-serif;">
+      <h2>Section 1</h2>
+      <p>This item uses <code>align-self: flex-start;</code> (sticks to the top).</p>
+    </section>
+
+    <!-- flex item 2 -->
+    <section style="align-self:flex-end;  background:#fff; border:2px solid #0ea5e9; font-family:system-ui,sans-serif;">
+      <h2>Section 2</h2>
+      <p>This item uses <code>align-self: flex-end;</code> (drops to the bottom).</p>
+    </section>
+
+  </div>
+
+</body>
+</html>

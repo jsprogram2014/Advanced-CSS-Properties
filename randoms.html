@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox Playground Skeleton</title>
+
+  <!--
+    No flexbox here yet. Add your own rules in this <style> block
+    or link an external stylesheet and experiment with:
+      display: flex;
+      justify-content: …;
+      align-items: …;
+      flex-wrap: …;
+  -->
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #f4f4f4;
+    }
+
+    header,
+    nav,
+    main,
+    aside,
+    footer {
+      padding: 1rem;
+      background: #fff;
+      border: 1px solid #ddd;
+      margin: 0.5rem;
+    }
+
+    /* Start playing here — for example:
+       .layout   { display: flex; }
+       .sidebar  { flex: 0 0 200px; }
+       .content  { flex: 1; }
+    */
+  </style>
+</head>
+<body>
+
+  <!-- Page header -->
+  <header>
+    <h1>Flexbox Demo Page</h1>
+  </header>
+
+  <!-- Primary navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main layout wrapper (add flexbox here if you like) -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Sidebar</h2>
+      <p>Some sidebar content</p>
+    </aside>
+
+    <!-- Main content -->
+    <!-- <main class="content" style="display:flex;justify-content: space-evenly;flex-direction:row-reverse;flex-wrap:wrap;align-items:stretch;"> -->
+    <main class="content" style="display:flex;flex-direction: row;">
+      <section style="background-color: red;">
+        <h2>Section 1</h2>
+        <p>Try experimenting with <code>justify-content</code>, <code>align-items</code>, and more.</p>
+      </section>
+
+      <section style="background-color: yellow;justify-self:center;">
+        <h2 >Section 2</h2>
+        <p>Duplicate or rearrange these sections to see how flexbox behaves.</p>
+      </section>
+      
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Flexbox Sandbox
+  </footer>
+
+</body>
+</html>
